@@ -1,10 +1,6 @@
 ---
 layout: post
-title: Learning More Stuff
+title: My First Post?
 ---
 
-Not gonna lie I wrote this post as well as the last one at pretty much the same time.
-I'm looking into utilizing jeckyll a bit more for my blog as right now, it's kind of bland.
-Again, I'm kinda new to everything thats going on here so it's been a bit tough going through
-and learning new interface after new interface and trying to figure out how they connect when
-you don't even know everything about them in the first place.
+Not 100% sure if I did everything correctly here but it should do. Overall most of this stuff was a little confusing to me at first because I've had pretty little experience with anything that we used during this exercise besides github, and even my experience with that is minimal and pretty much boils down to forking, cloning, and commiting to repos.
