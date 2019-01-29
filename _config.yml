@@ -86,4 +86,4 @@ exclude:
   - CNAME
 
 plug-ins:
-  - jeckyll-feed
+  - jekyll-feed
