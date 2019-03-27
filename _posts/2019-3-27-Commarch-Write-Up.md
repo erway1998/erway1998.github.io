@@ -1,0 +1,81 @@
+---
+layout: post
+title: Commarch Write-Up
+---
+
+Most of the answers to the questions were gotten through simply looking at the documentation of the project as
+Krita is fairly well documented overall. For questions that were somewhat opinion based we quickly discussed them
+and usually agreed on what answers we would put.
+
+== I. The project's IRC Channel ==
+ - http://webchat.freenode.net/?&channels=krita
+ - Also available at: https://krita.org/en/irc/
+
+== II Source Code repository ==
+ - Main Repository: https://phabricator.kde.org/source/krita/
+ - GitHub mirror: https://github.com/KDE/krita
+
+== III. Mail list archive ==
+ - https://mail.kde.org/pipermail/kimageshop/. Note that the mailing list is under the previous name of krita, KImageShop.
+
+== IV. Documentation ==
+ - API documentation: https://api.kde.org/extragear-api/graphics-apidocs/krita/html/index.html
+ - Documentation for users: https://docs.krita.org/en/
+ - Bug tracking documentation: https://docs.krita.org/en/untranslatable_pages/reporting_bugs.html
+ - Addtionally, Krita's "Get Involved" page (https://krita.org/en/get-involved/overview/) provides links to other sections of documentation on how to contribute to various areas. Since Krita is a KDE project, most of the documentation is found in those pages instead of pages specific to Krita, such as KDE's development documentation (https://community.kde.org/Get_Involved/development).
+
+== V. Other communication channels ==
+ - Another active form of communication for the Krita project is through the Krita forums: https://forum.kde.org/viewforum.php?f=136.
+ - Krita is also active on many different social media platforms either through communities or a profile run by the KDE foundation. Platforms include: Reddit, Twitter, Google Plus, Deviant Art, Facebook, VK, and Mastadon.
+ - There is also a Q&A forum: https://ask.krita.org/
+
+== VI. Project Website and/or Blog ==
+ - Website: https://krita.org/en/
+ - News / Blog: https://krita.org/en/?post_type=post&s=
+
+== A. Describe software project, its purpose and goals. ==
+ - Krita aims to be a free and open-source digital painting and illustration application similar to Corel Painter. It intends to be a powerful professional tool that is supported by and supports open standards. Krita's openess is also intended to make development influenced by users in order to "support their actual needs and workflow."
+
+== B. Give brief history of the project. When was the Initial Commit? The latest commit? ==
+ - Krita's origins start in 1998, with Mattias Ettrich building a Qt GUI around GIMP as a showcase of the ease of development. Eventually, the KDE project started to develop their own image editor, similar to photoshop or GIMP, called KImageShop, with the first commit being pushed on June 8th, 1999. From 2004-2009, the project was focused on image editing, but after 2009, the focus shifted to digital painting. Since Krita has very active development, commits are constantly being merged, meaning the repository is always up to date.
+
+== C. Who approves patches? How many people? ==
+ - Krita developers approve patches on KDE's Phabricator. Anyone who submits 3 patches is eligible for developer status.
+
+== D. Who has commit access, or has had patches accepted? How many total? ==
+ - https://phabricator.kde.org/project/members/8/ lists 27 members: however, it's difficult to tell who has any special privileges. It lists woltherav (Wolthera van Hövell) as a Krita Dev/Manual Writer, rather than just a User. However, rempt (Boudewijn Rempt) and dkazakov (Dmitry Kazakov) are both Users, but have the most knowledge of the project, according to Git by a Bus.
+
+== E. Who has the highest amounts of "Unique Knowledge?" (As per your "Git-by-a-bus" report. If there is a tie, list each contributor, with links if possible) ==
+ - rempt (Boudewijn Rempt) and dkazakov (Dmitry Kazakov)
+
+== F. What is your project's "Calloway Coefficient of Fail?" ==
+ - 20 points. This is because it's a large project, and it uses cmake.
+
+== G. Has there been any turnover in the Core Team? (i.e. has the same top 20% of contributors stayed the same over time? If not, how has it changed?) ==
+ - Repo history goes back to 1998. Kazakov started contributing in 2009, Rempt in 2003, and Zander in 2005. The 3 of them make up ~60% of the knowledge in the codebase.
+
+== H. Does the project have a BDFL, or Lead Developer? (BDFL == Benevolent Dictator for Life) If not, what is the structure of its leadership, and how is it chosen? ==
+  - I can't find any information on conflict resolution. The KDE Code of Conduct https://kde.org/code-of-conduct/ pushes pragmatism and respect. Ideally, developers respectfully hash it out, and the best idea wins. Anyone who doesn't follow this process is in violation of the CoC.
+
+== I. Are the front and back end developers the same people? What is the proportion of each? ==
+  - Krita developers are full stack. As explained on https://krita.org/en/get-involved/developers/, "To work on Krita, you have to use C++ and Qt. It’s a good way to learn both, actually!"
+
+== J. What have been some of the major bugs/problems/issues that have arisen during development? Who is responsible for quality control and bug repair? ==
+  - Searching on https://bugs.kde.org with "product:krita severity:critical" only produced one big bug, an undo/redo bug that causes data loss: https://bugs.kde.org/show_bug.cgi?id=397836 This was opened last August and confirmed, but so far has not been addressed.
+
+== K. How is the project's participation trending and why? ==
+  - Looking at most of the recent submissions to the project, there is still a fairly good amount of people contributing almost everyday.
+== L. In your opinion, does the project pass "The Raptor Test?" (i.e. Would the project survive if the BDFL, or most active contributor were eaten by a Velociraptor?) Why or why not? ==
+  - Based on our results from GBAB, I feel like this project would survive, even though the top contributor's risk is about 30% which is a large chunk, I don't think the project would die.
+== M. In your opinion, would the project survive if the core team, or most active 20% of contributors, were hit by a bus? Why or why not? ==
+  - Again, based on the results from GBAB, I feel like the project would most likely not survive the top 20% of contributors were to leave, just on the graph that shows the top 25, if the top 5 were to leave that would account for around 75% of the contributions.
+== N. Does the project have an official "on-boarding" process in place? (new contributor guides, quickstarts, communication leads who focus specifically on newbies, etc...) ==
+  - Yes, on the Krita website there is a page specifically for getting involved, explaining that a good place to start are some of the 'Junior Jobs', as well as pointing new contributors towards helpful resources and a basic overview of the project.
+== O. Does the project have Documentation available? How extensive is it? Does it include code examples? ==
+  - As far as use of the program, the documentation is very extensive and includes many tutorials and explanation of concepts in the program. Development documentation also has a very extensive guide complete with code examples.
+== P. If you were going to contribute to this project, but ran into trouble or hit blockers, who would you contact, and how? ==
+  - I would probably try to contact someone on the contributors manual page, they list 7 people that are almost always around on the IRC channel to help out.
+== Q. Based on these answers, how would you describe the decision making structure/process of this group? Is it hierarchical, consensus building, ruled by a small group, barely contained chaos, or ruled by a single or pair of individuals? ==
+  - From what I've seen it seems that the small group that contributes the most ends up making most decisions but also looks for ideas from the rest of the community.
+== R. Is this the kind of structure you would enjoy working in? Why, or why not? ==
+  - It seems like it would be a project we would enjoy working on, it is a well documented project with many members willing to help new contributors.
